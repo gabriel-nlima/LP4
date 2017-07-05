@@ -1,0 +1,11 @@
+table, tr,th,td, .table,{
+	font-family: Arial !important; 
+	font-size: 14px !important; 
+	border: 50px !important;
+	border-width: thick;
+	background-color: ghostwhite !important;
+	text-align: center !important; 
+}
+.header{
+	background-color: blue;
+}

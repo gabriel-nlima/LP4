@@ -1,0 +1,10 @@
+﻿
+======INFORMAÇÕES =====
+---- projphp.sql é o arquivo do banco de dados.
+---- Alunos: Gabriel Nascimento Lima, Alexandre França, Pedro Henrique.
+---- Professor Jânio Eduardo. 
+---- Sistemas de Informação, 5º Semestre. 
+---- Linguagem de Programação 4.
+
+
+

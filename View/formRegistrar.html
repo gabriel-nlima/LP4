@@ -1,0 +1,55 @@
+<form id="register-form" action="index.php?acao=registrar" method="post" role="form" style="display: none;">
+    <div class="form-group">
+        <input type="text" name="usuario" id="usuario" tabindex="1" class="form-control" maxlength="15" placeholder="Usuário (Para efetuar login)" value="" required="true">
+    </div>
+
+    <div class="form-group">
+        <input type="text" name="nome" id="nome" tabindex="1" class="form-control" maxlength="30" placeholder="Nome" value="" required="true">
+    </div>
+
+    <div class="form-group">
+        <input type="text" name="sobrenome" id="sobrenome" tabindex="1" class="form-control" maxlength="45" placeholder="Sobrenome" value="" required="true">
+    </div>
+
+        <div class="form-group">
+            <input type="text" name="cpf" id="cpf" class="form-control" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" placeholder="CPF" value="" required="true">
+        </div>
+
+        <div class="form-group">
+            <input type="email" name="email" id="email" tabindex="1" class="form-control" maxlength="45" placeholder="Endereço de e-mail" value="" required="true">
+        </div>
+                                          
+        <div class="form-group">
+            <input type="cep" name="cep" id="cep" class="form-control"  value="" size="10" maxlength="9"
+                                                       onblur="pesquisacep(this.value);" OnKeyPress="formatar('#####-###', this)" placeholder="CEP (Somente numerais)" value="">
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="rua" id="rua" tabindex="1" class="form-control" maxlength="40" placeholder="Rua" value="">
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="bairro" id="bairro" tabindex="1" class="form-control" maxlength="40" placeholder="Bairo" value="">
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="cidade" id="cidade" tabindex="1" class="form-control" maxlength="40" placeholder="Cidade" value="">
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="uf" id="uf" tabindex="1" class="form-control" maxlength="40" placeholder="UF" value="">
+        </div>
+
+        <div class="form-group">
+            <input type="password" name="senha" id="senha" tabindex="2" class="form-control" maxlength="20" placeholder="Senha" required="true">
+        </div>
+                                           
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-primary " value="Salvar">
+                </div>                             
+            </div>
+        </div>
+        
+</form>
