@@ -18,18 +18,22 @@
 		<?php
 
 		if(!isset($_GET['acao'])){
-			echo "<div class='col-xs-12 col-md-12'>";
+            echo "<div class='row'>";
+			echo "<div class='col-xs-12 col-md-12 col-lg-12'>";
 			echo "<h1>Pesquisar</h1></br>";
 			echo "<form method='post' action='Usuarios.php?acao=pesquisar' role='form'>
 					<input type='text' name='nome' placeholder='Digite um nome' value=''/>
 					<input type='submit' class='btn btn-primary' value='Pesquisar'>
 					</form>";
-
-		include_once('ViewUsuario.php');
+            echo "</div>";
+            echo "<div class='row'>";
+            echo "<div class='col-xs-12 col-md-12 col-lg-12'>";
+		          include_once('ViewUsuario.php');
 			echo "<h2>Usuarios encontrados:</h2>";
     		$view = new ViewUsuario();
     		$view->exibeTabelaUsuarios();
     		echo "</div>";
+            echo "</div>";
 
     	}elseif (isset($_GET['acao']) && $_GET['acao'] == 'enviar') {
     		echo "<div class='col-xs-10 col-xs-offset-2 col-md-6 col-md-offset-3'>";

@@ -1,14 +1,9 @@
 body {
     background-color: whitesmoke;
 }
-
-.container{
-    position: absolute;
-    top: 100px;
-}
 .h3{
     position: absolute;
-    top: 30px;
+    top: 5px;
 }
 
 .panel-login {
@@ -110,7 +105,6 @@ body {
 
 
 .footer {
-    float: right;
     bottom:0;
     text-align: center;
     width:100%;

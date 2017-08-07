@@ -11,7 +11,7 @@ class ViewUsuario{
             if(isset($resultado)){
                 if($resultado == "Registrado com sucesso"){
                     echo "<META HTTP-EQUIV=REFRESH CONTENT = '0; URL=
-                    http://127.0.0.1/Projeto PHP/View/paginaInicial.php'>
+                    http://localhost/Projeto PHP/View/paginaInicial.php'>
                     <script type=\"text/javascript\">alert(\"Salvo com sucesso.\");</script>";
                 }else{
                     echo "<script type=\"text/javascript\">alert(\"Falha ao salvar\");</script>";
@@ -34,7 +34,7 @@ class ViewUsuario{
         public function Login($validado){
         	if($validado == "Login efetuado com sucesso"){
         echo "<META HTTP-EQUIV=REFRESH CONTENT = '0; URL=
-                    http://127.0.0.1/Projeto PHP/View/paginaInicial.php'>
+                    http://localhost/Projeto PHP/View/paginaInicial.php'>
                     <script type=\"text/javascript\">alert(\"Login Efetuado com sucesso.\");</script>";
                 }else{
                 	echo "<script type=\"text/javascript\">alert(\"Usuario ou senha incorreto\");</script>";
@@ -48,7 +48,7 @@ class ViewUsuario{
                             <div class='panel-heading'>
                                 <div class='row'>
                                 <div class='col-xs-12 col-md-12 text-center'>
-                                        <h2>Registrar</h2>
+                                        <h2>Atualizar</h2>
                                     </div>
                                 </div>
                                 <div class='panel-body'>
@@ -158,7 +158,7 @@ class ViewUsuario{
 
             if($resultado == "Deletado"){
                 echo "<META HTTP-EQUIV=REFRESH CONTENT = '0; URL=
-                    http://127.0.0.1/Projeto PHP/View/Usuarios.php'>
+                    http://localhost/Projeto PHP/View/Usuarios.php'>
                     <script type=\"text/javascript\">alert(\" Usuario deletado.\");</script>";
                     return "Ok";
             }else{

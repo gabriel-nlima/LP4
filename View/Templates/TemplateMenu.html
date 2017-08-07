@@ -1,9 +1,17 @@
 <!-- Botões na Navbar -->
 <!-- Botão Inicio -->
-<ul class="nav nav-pills nav-tabs navbar-inverse bg-inverse">
-    <li class="nav-item" style="border-width: medium; background: #3f8dbf;" >
-        <a class="nav-link" href="paginaInicial.php"><font color="#00000"><b>Inicio</b></font></a>
-    </li>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a href="paginaInicial.php" class="navbar-brand">Home</a>
+        </div>  
+        <div class="collapse navbar-collapse" id="navBar">
+        <ul class="nav navbar-nav">
     <!-- Dropdown do botão AGENDA -->
     <li class="dropdown">
         <a href="agendar.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -16,8 +24,11 @@
             <li><a href="visualizar.php">Visualizar</a></li>
         </ul>
     </li>
-    <!-- Botão Contato -->
+    <!-- Botão Usuários -->
     <li class="nav-item">
         <a class="nav-link" href="Usuarios.php">Usuarios</a>
     </li>
-</ul>
+        </ul>
+    </div>
+</div>
+</nav>

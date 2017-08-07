@@ -9,7 +9,7 @@
 			$dataAgendamento = $_POST['dataagendamento'];
 			$nomeMedico = $_POST['nomemedico'];
 			$horaAgendamento = $_POST['horario'];
-			$tipoAgendamento = ['marcacao'];
+			$tipoAgendamento = $_POST['marcacao'];
 
 			//inclui a model 
 			include_once ('../Model/Model.php');

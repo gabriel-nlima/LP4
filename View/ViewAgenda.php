@@ -6,7 +6,7 @@
 
             if($resultado == "Registrado com sucesso"){
                 echo "<META HTTP-EQUIV=REFRESH CONTENT = '0; URL=
-                    http://127.0.0.1/Projeto PHP/View/agendar.php'>
+                    http://localhost/Projeto PHP/View/agendar.php'>
                     <script type=\"text/javascript\">alert(\"Agendamento cadastrado com sucesso.\");</script>";
                     return "Ok";
             }else{
@@ -177,7 +177,7 @@
 
             if($resultado == "Deletado"){
                 echo "<META HTTP-EQUIV=REFRESH CONTENT = '0; URL=
-                    http://127.0.0.1/Projeto PHP/View/visualizar.php'>
+                    http://localhost/Projeto PHP/View/visualizar.php'>
                     <script type=\"text/javascript\">alert(\"Agenda Deletada\");</script>";
                     return "Ok";
             }else{
