@@ -35,7 +35,7 @@
                     <input type='submit' class='btn btn-primary' value='Pesquisar'>
                     </form>";
             echo    "<form method='post' action='visualizar.php?acao=gerar' role='form'>
-                    <input type='submit' class='btn btn-primary' value='Gerar PDF'>
+                    <input type='submit' class='btn btn-primary disabled' value='Gerar PDF'>
                     </form>
                     </div>
                     </div>";
@@ -54,7 +54,7 @@
                     <input type='submit' class='btn btn-primary' value='Pesquisar'>
                     </form>";
             echo    "<form method='post' action='visualizar.php?acao=gerar' role='form'>
-                    <input type='submit' class='btn btn-primary' value='Gerar PDF'>
+                    <input type='submit' class='btn btn-primary disabled' value='Gerar PDF'>
                     </form>";
 
             include_once ('ViewAgenda.php');
@@ -74,7 +74,7 @@
                     <input type='submit' class='btn btn-primary' value='Pesquisar'>
                     </form>";
             echo    "<form method='post' action='visualizar.php?acao=gerar' role='form'>
-                    <input type='submit' class='btn btn-primary' value='Gerar PDF'>
+                    <input type='submit' class='btn btn-primary disabled' value='Gerar PDF'>
                     </form>";
 
                 include_once ('../Controller/ControllerAgenda.php');

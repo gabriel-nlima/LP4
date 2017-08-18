@@ -10,9 +10,8 @@ class ViewUsuario{
 		public function registrar($resultado){
             if(isset($resultado)){
                 if($resultado == "Registrado com sucesso"){
-                    echo "<META HTTP-EQUIV=REFRESH CONTENT = '0; URL=
-                    http://localhost/Projeto PHP/View/paginaInicial.php'>
-                    <script type=\"text/javascript\">alert(\"Salvo com sucesso.\");</script>";
+                    echo "<script type=\"text/javascript\">alert(\"Salvo com sucesso.\");</script>";
+                    echo "<script type'text/javascript'>location.href='View/paginaInicial.php'</script>";
                 }else{
                     echo "<script type=\"text/javascript\">alert(\"Falha ao salvar\");</script>";
                     include_once('formRegistrar.html');
@@ -33,9 +32,8 @@ class ViewUsuario{
         //funcao que mostra o resultado do login e redireciona o usuario para a pagina inicial ao clicar no alerta em js
         public function Login($validado){
         	if($validado == "Login efetuado com sucesso"){
-        echo "<META HTTP-EQUIV=REFRESH CONTENT = '0; URL=
-                    http://localhost/Projeto PHP/View/paginaInicial.php'>
-                    <script type=\"text/javascript\">alert(\"Login Efetuado com sucesso.\");</script>";
+        echo "<script type=\"text/javascript\">alert(\"Login Efetuado com sucesso.\");</script>";
+        echo "<script type='text/javascript'> location.href='View/paginaInicial.php'</script>";
                 }else{
                 	echo "<script type=\"text/javascript\">alert(\"Usuario ou senha incorreto\");</script>";
                 	include_once('formLogin.html');
@@ -157,13 +155,12 @@ class ViewUsuario{
         public function Deletar($resultado){
 
             if($resultado == "Deletado"){
-                echo "<META HTTP-EQUIV=REFRESH CONTENT = '0; URL=
-                    http://localhost/Projeto PHP/View/Usuarios.php'>
-                    <script type=\"text/javascript\">alert(\" Usuario deletado.\");</script>";
-                    return "Ok";
+                echo "<script type=\"text/javascript\">alert(\" Usuario deletado.\");</script>";
+                echo "<script type='text/javascript'>location.href='View/Usuarios.php'</script>";
+                    
             }else{
                 echo "<script type=\"text/javascript\">alert(\"Erro ao deletar usuario\");</script>";
-                return "Not ok";
+                
             }
         }
     }

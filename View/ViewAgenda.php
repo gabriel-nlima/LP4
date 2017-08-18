@@ -5,10 +5,8 @@
         public function Agendar($resultado){
 
             if($resultado == "Registrado com sucesso"){
-                echo "<META HTTP-EQUIV=REFRESH CONTENT = '0; URL=
-                    http://localhost/Projeto PHP/View/agendar.php'>
-                    <script type=\"text/javascript\">alert(\"Agendamento cadastrado com sucesso.\");</script>";
-                    return "Ok";
+                echo "<script type=\"text/javascript\">alert(\"Agendamento cadastrado com sucesso.\");</script>";
+                echo "<script>location.href='agendar.php'</script>";
             }else{
                 echo "<script type=\"text/javascript\">alert(\"Erro ao cadastrar agendamento\");</script>";
                 return "Not ok";
@@ -38,7 +36,7 @@
 
         public function exibeRelatorioAgenda(){
             
-            echo "<table class='table' border='5' width='100%' >";
+            echo "<table class='table' border='2' width='100%' >";
             echo "<thead>
                     <tr>
                         <th width='20%'> Nome </th>
@@ -49,7 +47,6 @@
                         
                 </thead>
                 <tbody>";
-    
             include_once ('../Controller/ControllerAgenda.php');
             $controller = new ControllerAgenda();
             $controller->listarRelatorio();
@@ -104,7 +101,7 @@
                     <label> Insira uma data para agendamento </label>
                     <div class='row'>
                         <div class='col-xs-6 col-md-6 form-group'>
-                                <input type='dataagendamento' name='dataagendamento' id='dataagendamento' class='form-control' size='10' maxlength='10'
+                                <input type='date' name='dataagendamento' id='dataagendamento' class='form-control' size='10' maxlength='10'
                                        onblur=\"pesquisacep(this.value);\" OnKeyPress=\"formatar('##/##/####', this)\" placeholder='Data de Agendamento' value='$dataAgendamento'>
                         </div>
                     </div>
@@ -176,10 +173,8 @@
          public function DeletarAgenda($resultado){
 
             if($resultado == "Deletado"){
-                echo "<META HTTP-EQUIV=REFRESH CONTENT = '0; URL=
-                    http://localhost/Projeto PHP/View/visualizar.php'>
-                    <script type=\"text/javascript\">alert(\"Agenda Deletada\");</script>";
-                    return "Ok";
+                echo "<script type=\"text/javascript\">alert(\"Agenda Deletada\");</script>";
+                echo "<script>location.href='visualizar.php'</script>";
             }else{
                 echo "<script type=\"text/javascript\">alert(\"Erro ao deletar agendamento\");</script>";
                 return "Not ok";

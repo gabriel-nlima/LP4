@@ -18,7 +18,7 @@
 		<?php
 
 		if(!isset($_GET['acao'])){
-            echo "<div class='row'>";
+            //echo "<div class='row'>";
 			echo "<div class='col-xs-12 col-md-12 col-lg-12'>";
 			echo "<h1>Pesquisar</h1></br>";
 			echo "<form method='post' action='Usuarios.php?acao=pesquisar' role='form'>
